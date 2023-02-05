@@ -1,0 +1,47 @@
+#Container > * {
+    border: 1px solid black;
+}
+
+#Container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    width: 90%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: gray;
+    margin-top: auto;
+}
+
+header {
+    background-color: blue;
+    text-align: center;
+    height: 100px;
+    grid-column: 1 /span 2;
+}
+
+nav {
+    background-color: blueviolet;
+    text-align: center;
+    height: 400px;
+    order: 1;
+}
+
+article {
+    background-color: brown;
+    text-align: center;
+    height: 400px;
+}
+
+footer {
+    background-color: green;
+    text-align: center;
+    height: 100px;
+    grid-column: 1 / span 2;
+    order: 1;
+}
+
